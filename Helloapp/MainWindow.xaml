@@ -24,7 +24,7 @@
         <TextBlock x:Name="bathPerDayBox01" HorizontalAlignment="Left" Margin="311,49,0,0" TextWrapping="Wrap" Text="บาท / วัน" VerticalAlignment="Top" Height="33" Width="102" FontSize="24" Grid.Column="1"/>
         <TextBlock x:Name="bathBox" HorizontalAlignment="Left" Margin="311,125,0,0" TextWrapping="Wrap" Text="บาท" VerticalAlignment="Top" Height="33" Width="45" FontSize="24" Grid.Column="1"/>
         <TextBlock x:Name="dayBox" HorizontalAlignment="Left" Margin="356,184,0,0" TextWrapping="Wrap" Text="วัน" VerticalAlignment="Top" Height="33" Width="35" FontSize="24" Grid.Column="1"/>
-        <TextBlock x:Name="totalTextBlock" HorizontalAlignment="Left" Margin="290,184,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="33" Width="61" IsEnabled="False" Grid.Column="1" Text="14" FontSize="24" FlowDirection="RightToLeft" Foreground="Red"/>
+        <TextBlock x:Name="totalTextBlock" HorizontalAlignment="Left" Margin="290,184,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="33" Width="61" IsEnabled="False" Grid.Column="1" FontSize="24" FlowDirection="RightToLeft" Foreground="Red"/>
 
     </Grid>
 </Window>
