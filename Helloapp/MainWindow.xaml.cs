@@ -24,18 +24,18 @@ namespace Helloapp
         {
             InitializeComponent();
         }
-        float income = 0;
-        float expenses = 0;
-        float wishList = 0;
-        float total = 0;
-        private void incomeTextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
-
+       
         private void process_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("GGG");
+            float income = float.Parse(incomeTextBox.Text);
+            float expenses = float.Parse(expensesTextBox.Text);
+            float wishList = float.Parse(wishListTextBox.Text);
+            float day = wishList / (income - expenses);
+            int iday = (int)Math.Round(day);
+            string sDay = iday.ToString();
+            totalTextBlock.Text = sDay;
         }
+
+
     }
 }

@@ -5,25 +5,26 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Helloapp"
         mc:Ignorable="d"
-        Title="คำนวณเงินเก็บ" Height="300" Width="800">
+        Title="คำนวณเงินเก็บ" Height="300" Width="600">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="115*"/>
+            <ColumnDefinition Width="22*"/>
+            <ColumnDefinition Width="93*"/>
             <ColumnDefinition Width="17*"/>
         </Grid.ColumnDefinitions>
-        <TextBlock x:Name="incomeText" HorizontalAlignment="Left" Margin="81,49,0,0" TextWrapping="Wrap" Text="รายได้" VerticalAlignment="Top" Height="33" Width="79" FontSize="24"/>
-        <TextBlock x:Name="expensesText" HorizontalAlignment="Left" Margin="81,87,0,0" TextWrapping="Wrap" Text="รายจ่าย" VerticalAlignment="Top" Height="33" Width="79" FontSize="24"/>
-        <TextBlock x:Name="wishCostText" HorizontalAlignment="Left" Margin="81,125,0,0" TextWrapping="Wrap" Text="ราคาของที่อยากได้" VerticalAlignment="Top" Height="33" Width="179" FontSize="24"/>
-        <Button x:Name="process" Content="คำนวณ" HorizontalAlignment="Left" Margin="81,177,0,0" VerticalAlignment="Top" Width="159" Height="49" FontSize="20" Click="process_Click"/>
-        <TextBlock HorizontalAlignment="Left" Height="49" Margin="269,177,0,0" TextWrapping="Wrap" Text="คุณต้องเก็บเงินทั้งหมด" VerticalAlignment="Top" Width="212" FontSize="24"/>
-        <TextBox x:Name="incomeTextBox" HorizontalAlignment="Left" Height="33" Margin="183,49,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="378" TextChanged="incomeTextBox_TextChanged"/>
-        <TextBox x:Name="expensesTextBox" HorizontalAlignment="Left" Height="33" Margin="183,87,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="378"/>
-        <TextBox x:Name="wishListTextBox" HorizontalAlignment="Left" Height="33" Margin="260,125,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="300"/>
-        <TextBlock x:Name="bathPerDayBox02" HorizontalAlignment="Left" Margin="578,87,0,0" TextWrapping="Wrap" Text="บาท / วัน" VerticalAlignment="Top" Height="33" Width="102" FontSize="24"/>
-        <TextBlock x:Name="bathPerDayBox01" HorizontalAlignment="Left" Margin="578,49,0,0" TextWrapping="Wrap" Text="บาท / วัน" VerticalAlignment="Top" Height="33" Width="102" FontSize="24"/>
-        <TextBlock x:Name="bathBox" HorizontalAlignment="Left" Margin="578,125,0,0" TextWrapping="Wrap" Text="บาท" VerticalAlignment="Top" Height="33" Width="45" FontSize="24"/>
-        <TextBlock x:Name="dayBox" HorizontalAlignment="Left" Margin="578,177,0,0" TextWrapping="Wrap" Text="วัน" VerticalAlignment="Top" Height="33" Width="35" FontSize="24"/>
-        <TextBlock x:Name="totalTextBlock" HorizontalAlignment="Left" Margin="486,177,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="33" Width="75" IsEnabled="False"/>
+        <TextBlock x:Name="incomeText" HorizontalAlignment="Left" Margin="0,49,0,0" TextWrapping="Wrap" Text="รายได้" VerticalAlignment="Top" Height="33" Width="79" FontSize="24" Grid.Column="1"/>
+        <TextBlock x:Name="expensesText" HorizontalAlignment="Left" Margin="0,87,0,0" TextWrapping="Wrap" Text="รายจ่าย" VerticalAlignment="Top" Height="33" Width="79" FontSize="24" Grid.Column="1"/>
+        <TextBlock x:Name="wishCostText" HorizontalAlignment="Left" Margin="0,125,0,0" TextWrapping="Wrap" Text="ราคาของที่อยากได้" VerticalAlignment="Top" Height="33" Width="179" FontSize="24" Grid.Column="1"/>
+        <Button x:Name="process" Content="คำนวณ" HorizontalAlignment="Left" Margin="0,177,0,0" VerticalAlignment="Top" Width="73" Height="49" FontSize="20" Click="process_Click" Grid.Column="1"/>
+        <TextBlock HorizontalAlignment="Left" Height="49" Margin="78,184,0,0" TextWrapping="Wrap" Text="คุณต้องเก็บเงินทั้งหมด" VerticalAlignment="Top" Width="212" FontSize="24" Grid.Column="1"/>
+        <TextBox x:Name="incomeTextBox" HorizontalAlignment="Left" Height="33" Margin="84,49,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="217" Grid.Column="1" FontSize="24"/>
+        <TextBox x:Name="expensesTextBox" HorizontalAlignment="Left" Height="33" Margin="84,87,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="217" Grid.Column="1" FontSize="24"/>
+        <TextBox x:Name="wishListTextBox" HorizontalAlignment="Left" Height="33" Margin="179,125,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="122" Grid.Column="1" FontSize="24"/>
+        <TextBlock x:Name="bathPerDayBox02" HorizontalAlignment="Left" Margin="311,87,0,0" TextWrapping="Wrap" Text="บาท / วัน" VerticalAlignment="Top" Height="33" Width="102" FontSize="24" Grid.Column="1"/>
+        <TextBlock x:Name="bathPerDayBox01" HorizontalAlignment="Left" Margin="311,49,0,0" TextWrapping="Wrap" Text="บาท / วัน" VerticalAlignment="Top" Height="33" Width="102" FontSize="24" Grid.Column="1"/>
+        <TextBlock x:Name="bathBox" HorizontalAlignment="Left" Margin="311,125,0,0" TextWrapping="Wrap" Text="บาท" VerticalAlignment="Top" Height="33" Width="45" FontSize="24" Grid.Column="1"/>
+        <TextBlock x:Name="dayBox" HorizontalAlignment="Left" Margin="356,184,0,0" TextWrapping="Wrap" Text="วัน" VerticalAlignment="Top" Height="33" Width="35" FontSize="24" Grid.Column="1"/>
+        <TextBlock x:Name="totalTextBlock" HorizontalAlignment="Left" Margin="290,184,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="33" Width="61" IsEnabled="False" Grid.Column="1" Text="14" FontSize="24" FlowDirection="RightToLeft" Foreground="Red"/>
 
     </Grid>
 </Window>
