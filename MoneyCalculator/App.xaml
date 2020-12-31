@@ -1,7 +1,7 @@
-﻿<Application x:Class="Helloapp.App"
+﻿<Application x:Class="MoneyCalculator.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:Helloapp"
+             xmlns:local="clr-namespace:MoneyCalculator"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
          
