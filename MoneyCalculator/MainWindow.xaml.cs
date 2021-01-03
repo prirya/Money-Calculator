@@ -27,7 +27,8 @@ namespace MoneyCalculator
        
         private void process_Click(object sender, RoutedEventArgs e)
         {
-            float income = float.Parse(incomeTextBox.Text);
+            string income_text = RemoveNonNumber(incomeTextBox.Text);
+            float income = float.Parse(income_text);
             float expenses = float.Parse(expensesTextBox.Text);
             float wishList = float.Parse(wishListTextBox.Text);
             float day = wishList / (income - expenses);
@@ -36,6 +37,19 @@ namespace MoneyCalculator
             totalTextBlock.Text = sDay;
         }
 
-
+        public string RemoveNonNumber(string input)
+		{
+            string output = "";
+            foreach (char c in input)
+			{
+                if (c == '-')
+                    output += c;
+                else if (c == '.')
+                    output += c;
+                else if (char.IsDigit(c))
+                    output += c;
+			}
+            return output;
+		}
     }
 }
