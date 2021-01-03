@@ -28,9 +28,20 @@ namespace MoneyCalculator
         private void process_Click(object sender, RoutedEventArgs e)
         {
             string income_text = RemoveNonNumber(incomeTextBox.Text);
+            incomeTextBox.Text = income_text;
             float income = float.Parse(income_text);
-            float expenses = float.Parse(expensesTextBox.Text);
-            float wishList = float.Parse(wishListTextBox.Text);
+
+            string expenses_text = RemoveNonNumber(expensesTextBox.Text);
+            expensesTextBox.Text = expenses_text;
+            float expenses = float.Parse(expenses_text);
+            
+
+            string wishList_text = RemoveNonNumber(wishListTextBox.Text);
+            wishListTextBox.Text = wishList_text;
+            float wishList = float.Parse(wishList_text);
+
+            
+
             float day = wishList / (income - expenses);
             int iday = (int)Math.Round(day);
             string sDay = iday.ToString();
